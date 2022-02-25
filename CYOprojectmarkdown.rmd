@@ -431,7 +431,7 @@ summary(svm_model)
 
 Prediction on Test data set
 
-```{r, include=TRUE, echo=FALSE}
+```{r, include=TRUE, echo=TRUE}
 pred_glm <- predict(glm_model, test_set)
 
 # Confusion Matrix 
@@ -455,7 +455,7 @@ roc_glm
 
 Prediction on the test data set.
 
-```{r, include=TRUE, echo=FALSE}
+```{r, include=TRUE, echo=TRUE}
 pred_rpart <- predict(tree_model, test_set, type = "class")
 
 # prediction probabilities
@@ -471,7 +471,7 @@ cmx_tree
 
 Prediction on Test data set
 
-```{r, include=TRUE, echo=FALSE}
+```{r, include=TRUE, echo=TRUE}
 pred_xgb <- predict(xgb_model, test_set)
 
 # Confusion Matrix 
@@ -491,7 +491,7 @@ cmx_xgb
 
 Prediction on Test data set
 
-```{r, include=TRUE, echo=FALSE}
+```{r, include=TRUE, echo=TRUE}
 pred_knn <- predict(knn_model, test_set)
 
 # Confusion Matrix 
@@ -509,7 +509,7 @@ cmx_knn
 
 Prediction on the test data
 
-```{r, include=TRUE, echo=FALSE}
+```{r, include=TRUE, echo=TRUE}
 par(mfrow = c(1,2))
 pred_svm <- predict(svm_model, test_set)
 
